@@ -14,5 +14,6 @@ use Illuminate\Http\Request;
 */
 
 Route::post('/login', 'LoginController@login')->name('login');
+Route::post('/register', 'RegisterController@register')->name('register');
 
 Route::middleware('auth:api')->get('/me', 'UsersController@me')->name('users.me');
